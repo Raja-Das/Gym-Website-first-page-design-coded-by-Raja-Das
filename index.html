@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Raja's Fitness</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@600&family=Bowlby+One+SC&family=Edu+QLD+Beginner&family=Roboto+Condensed:wght@300&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@600&family=Bowlby+One+SC&family=Coda:wght@800&family=Edu+QLD+Beginner&family=Poller+One&family=Roboto+Condensed:wght@300&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@600&family=Bowlby+One+SC&family=Coda:wght@800&family=Edu+QLD+Beginner&family=Oswald&family=Poller+One&family=Roboto+Condensed:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="CSS-1/style-1.css">
+	<style>
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: url("back.jpg") no-repeat center center fixed;
+			background-size: cover;
+
+        }
+        .logoname{
+        	margin: 1px 4px;
+        }
+        .left{
+        	color: white;
+        	/* border: 2px solid red; */
+
+        	display: inline-block;
+
+        	 position: absolute;
+             left: 14px;
+             top: 1px;
+
+
+        }
+        .left img{
+        	
+        	filter: invert(100%);
+        	width: 80px;
+        	padding: -5px;
+        	align: center;
+        }
+        .left div{
+        	text-align: center;
+            font-weight: bold;
+            line-height: 0px;
+            font-size: 13px;
+            position: relative;
+            margin: -13px 2px 2px 4px;
+        }
+        .header{
+        	position: sticky;
+        	top: 6px;
+        	z-index: 7;
+        }
+        .mid{
+        	color: white;
+        	/*border: 2px solid green;*/
+
+        	display: block;
+        	width: 62%;
+        	margin: -1px auto;
+        	top: 19px;
+
+        }
+
+        .op{
+
+font-family: 'Baloo Bhai 2', cursive;
+
+font-weight: 900;
+        }
+        .right{
+        	color: white;
+             /*border: 2px solid yellowgreen; */
+
+             display: inline-block;
+             position: absolute;
+             right: 12px;
+             top: 12px;
+        }
+        .navbar{
+        	display: inline-block;
+        }
+
+        .navbar li{
+        	display: inline-block;
+        	font-size: 17px;
+        	padding: 0px 10px;
+        	margin-left: 30px;
+        	
+
+        }
+        .navbar li a{
+        	color: white;
+        	text-decoration:none;
+        	padding: 5px 0px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+        	color: #FF007F;
+        	text-decoration: none;
+        	
+        }
+        .btn{
+  
+            font-family: 'Roboto Condensed', sans-serif;
+
+
+
+        	font-weight: bold;
+        	margin: 0px 9px;
+        	background: #FF007F;
+        	color: white;
+        	padding: 8px 9px;
+        	/* border: 2px solid grey; */
+        	border-radius: 15px;
+        	cursor: pointer;
+
+
+        }
+        .btn:hover{
+        	background-color: red;
+        	color: black;
+        	font-weight: bold;
+        }
+        .midRight{
+        	/* border: 2px solid blueviolet; */
+        	margin-left: -8px;
+        	margin-right: 0px;
+        	margin-top: 0px;
+        	
+        	border-radius: 0px;
+        	background-color: black;
+        	padding-bottom: 0px;
+        }
+
+
+        .bigFont{
+        	font-family: 'Anton', sans-serif;
+        	display: inline-block;
+        	/* border: 2px solid yellowgreen; */
+        	        }
+        #dont{
+
+        	font-size: 63px;
+        	color: white;
+        	margin-left: 80px;
+        	margin-top: 90px;
+        }
+        #until{
+        	font-size: 51px;
+        	color: #fb2525;
+        	margin-left: 81px;
+        	margin-top: -14px;
+
+        }
+        #you{
+        	font-size: 61px;
+        	color: white;
+        	margin-left: 81px;
+        	margin-top: -21px;
+
+        }
+        #proud{
+        	font-size: 107px;
+        	color: #fb2525;
+        	margin-left: 251px;
+        	margin-top: -146px;
+
+        }
+        
+        .DownButton{
+        	display: inline-block;
+        	  padding: 0px 91px;
+        	  margin: 6px 118px;
+        	/* border: 2px solid brown; */
+        	position: relative;
+        }
+        .leranMore{
+        	display: inline-block;
+            margin-left: -81px;
+        	margin-top: -15px;
+        	/* border: 2px solid orange; */
+        	font-weight: bold;
+        	background-color: red;
+        }
+        .joinUs{
+        	font-family: 'Bowlby One SC', cursive;
+        	display: inline-block;
+        	margin-left: 63px;
+        	margin-top: -6px;
+        	/* border: 2px solid pink; */
+        	background-color: #FF007F;
+        }
+
+
+        /* pulse button for join us */
+       
+
+
+		/* pulse button for Learn more */
+		.buttonMore{
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: white;
+			outline: 6px solid #83ff12;
+
+			padding: 16px 9px;
+			position: relative;
+			overflow: hidden;
+			transition: color 1s;
+		}
+		.buttonMore:hover{
+			color: black;
+			outline: 2px solid white;
+		}
+		.buttonMore::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -50px;
+			width: 0;
+			height: 100%;
+			background-color: white;
+			transform: skewX(35deg);
+			z-index: -1;
+			transition: width 1s;
+		}
+		.buttonMore:hover::before{
+			width: 150%;
+		}
+
+
+
+
+
+
+
+.showcase{
+			width: 594%;
+			height: 180%;
+			margin-top: -61px;
+			margin-left: -28px;
+			position: relative;
+
+		}
+		.showcase video{
+			width: 27%;
+			height: 99%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+		.title{
+			width: 27%;
+			height: 99%;
+			background-color: black ;
+			font-size: 43px;
+			color: white;
+			mix-blend-mode: multiply;
+		}
+
+		/* down */
+		#down{
+			display: inline-block;
+            background-color: blue;
+            
+            width:451px ;
+            height: 231px;
+            padding: 27px 25px 24px 32px;
+            margin: -345px 74px 60px 754px;
+		}
+		.downUNDER1{
+			display: inline-block;
+			background-color: grey;
+			
+			padding:2px 2px 2px 2px ;
+			margin: 203px 1px 2px 8px;
+			width: 129px;
+			height: 88px;
+			position: relative;
+		}
+		.downUNDER2{
+			display: inline-block;
+			background-color: gainsboro;
+			
+			padding: 2px 2px 2px 2px;
+			margin: 2px 2px 2px -7px;
+			width: 145px;
+			height: 88px;
+			position: relative;
+		}
+		.downUNDER3{
+			display: inline-block;
+			background-color: burlywood;
+			
+			padding: 2px 2px 2px 2px;
+			margin: 2px 2px 2px -7px;
+			width: 141px;
+			height: 88px;
+			position: relative;
+		}
+		.mostDown{
+			display: inline-block;
+            background-color: #FF004F;
+			
+			padding: 2px 2px 2px 2px;
+			margin: -62px 2px 2px 750px;
+			width: 508px;
+			height: 143px;
+		}
+
+
+		.bottomLine{
+			display: inline-block;
+			margin: 29px 2px 2px 94px;
+			padding: 2px 2px 2px 2px;
+			font-family: 'Edu QLD Beginner', cursive;
+			text-align: center;
+			color: white;
+			font-size: 22px;
+
+		}
+		.RimageTop{
+			display: inline-block;
+			margin: -31px 2px -102px -36px;
+			width: 512px;
+			height: 286px;
+		}
+
+		.topDIVimage{
+
+			
+			height: 0px;
+		}
+
+		.arm{
+			display: inline-block;
+			height: 92px;
+			width: 135px;
+			margin: -243px -5px 121px 794px;
+			position: relative;
+		}
+
+			.chest{
+			display: inline-block;
+			height: 92px;
+			width: 145px;
+			margin: -253px 40px 139px 1073px;
+			position: relative;
+		}
+			.abs{
+			display: inline-block;
+			height: 92px;
+			width: 152px;
+			margin: -246px -3px 157px 929px;
+			position: relative;
+		}
+      
+      /* form */
+      .input-group{
+      	position: relative;
+      }
+      .input{
+      	padding: 6px;
+      	border: none;
+      	border-radius: 29px;
+      	font:inherit ;
+      	color: white;
+      	background-color: transparent;
+      	outline: 2px solid white;
+      }
+      .input-label{
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      	transform: translate(10px, 10px);
+      	transition: transform .25s;
+      }
+      .input:focus+.input-label,
+      .input:valid+.input-label{
+      	transform:
+        translate(10px, -14px) scale(.8);
+      	color: #d1c5fc;
+      	padding-inline: 5px;
+      	background-color: #242329;
+      }
+      .input:is(:focus, :valid){
+      	outline-color: #d1c5fc;
+      }
+
+      #form{
+      	/* border: 2px solid red; */
+      	margin: -197px 2px 2px 2px ;
+      	display: inline-block;
+      	height: 197px;
+      	width: 425px;
+      	position: relative;
+
+      }
+
+      .Name{
+      	color: white;
+      	margin: -33px 2px 2px 2px;
+      	display: inline-block;
+      	position: relative;
+      	height: 48px;
+      	width: 8px;
+      }
+       .Age{
+       	color: white;
+      	margin: -25px 26px 9px 2px;
+      	display: inline-block;
+      	position: relative;
+      	height: 2px;
+      	width: 2px;
+      }
+       .Email{
+       	color: white;
+      	margin: 21px 2px 2px 2px;
+      	display: inline-block;
+      	position: relative;
+      	height: 2px;
+      	width: 2px;
+      }
+       .Ph{
+       	color: white;
+      	margin: 21px 2px 2px 2px;
+      	display: inline-block;
+      	position: relative;
+      	height: 2px;
+      	width: 2px;
+      }
+
+      #Rhead{
+      	color: #FF4500;
+      	text-align: center;
+
+      }
+
+      /* SUBMIT button */
+      
+      .btnSub{
+      	position: relative;
+      	width: 70px;
+      	height: 30px;
+      	font-size: 10px;
+      	background-color: #202231;
+      	color: white;
+      	border: none;
+      	border-radius: 4px;
+      	cursor: pointer;
+      	transition: width .5s;
+      	border-radius: .5s;
+      }
+      .btnSub *{
+      	position: absolute;
+      	top: 50%;
+      	left: 50%;
+      	transform: translate(-50%, -50%);
+      	transition: opacity .25s;
+      }
+      .icon{
+      	opacity: 0;
+      }
+      .btnSub:focus{
+      	width: 30px;
+      	background-color: #44c08a;
+      	border-radius: 50%;
+      }
+      .btnSub:focus .textSub{
+      	opacity: 0;
+      }
+      .btnSub:focus .icon{
+      	opacity: 1;
+      	transition-delay: .5s;
+      }
+
+      .divBTNsub{
+      	margin: 8px 2px 2px 337px;
+      	display: inline-block;
+      	position: relative;
+      }
+
+      /*next page */
+
+      .nextbottom{
+      	background-color: red;
+      	border: yellow;
+      	margin: 2px 2px 2px 2px ;
+      }
+
+
+      /* VIDEO */
+      .showcase{
+			width: 96%;
+			height: 117%;
+			position: relative;
+			margin-top: -107px;
+			margin-left: 2px;
+
+		}
+		.showcase video{
+			width: 104%;
+			height: 141%;
+			position: absolute;
+			top: 0px;
+			left: 0;
+			object-fit: cover;
+		}
+		.title1{
+			width: 92%;
+			height: 162%;
+			background-color: #ff0063 ;
+			font-size: 69px;
+			color: black;
+			mix-blend-mode: multiply;
+		}
+		.title2{
+			width: 71%;
+			height: 99%;
+			background-color: black ;
+			font-size: 69px;
+			color: #f10b36;
+			mix-blend-mode: multiply;
+		}
+
+	 
+
+</style>
+
+</head>
+
+<body>
+	<header class="header">
+
+		<!--Left Box for logo-->
+	    <div class="left">
+	          <img src="logo8.jpg">
+	          <div class="logoname">RAJA FITNESS</div>
+ 	    </div>
+
+        <div class="midRight">
+	    <!--Middle Box for navbar-->
+	    <div class="mid">
+	    	<ul class="navbar">
+	    		<li><a  class="op" href="#">Home</a></li>
+		   	    <li><a href="#" class="op">ABOUT US</a></li>
+		   	    
+		   	    <li><a href="#" class="op">SCHEDULE</a></li>
+		   	    <li><a href="#" class="op">TRAINERS</a></li>
+		   	    <li><a href="#" class="op">BLOGS</a></li>
+		   	    <li><a href="#" class="op">NEWS</a></li>
+		    </ul>
+	    </div>
+
+        </div>
+
+	    <!--Right Box for buttons-->
+	    <div class="right">
+		   <button class="btn">Call Us Now</button> 
+		   <button class="btn">Email Us</button>
+	    </div>
+	</header>
+
+  <div class="bigFont">
+	<div id="dont">
+		DON'T STOP
+	</div>
+	<div id="until">
+		UNTIL
+	</div>
+	<div id="you">
+		YOU'RE 
+	</div>
+	<div id="proud">
+		PROUD
+	</div>
+  </div>
+  
+  <br>
+  <div class="DownButton">
+  	<div class="leranMore">
+  		<a href="#" class="buttonMore">Learn More</a>
+  	</div>
+
+  	<div class="joinUs">
+  		<a href="#" class="buttonMore">Join Us</a>
+  	</div>
+  </div>
+
+    
+   <div id="down">
+
+   	<div class="topDIVimage">
+   	    <img class="RimageTop" src="imgbk.jpg">
+    <!-- ............................................. -->
+   	    <div id="form">
+   		      <h3 id="Rhead">TRANSFORM YOUR LIFE</h3>
+   		      <div class="Name">
+   			      <input type="text" id="name" required class="input">
+   		          <label for="name" class="input-label" >Name</label>
+   	          </div><br>
+
+   		      <div class="Age">
+   			      <input type="text" id="age" required class="input">
+   		          <label for="age" class="input-label" >Age</label>
+   		      </div><br>
+
+   		      <div class="Email">
+   			      <input type="email" id="email" required class="input">
+   		          <label for="email" class="input-label" >Email</label>
+   		      </div><br>
+
+   		      <div class="Ph">
+   			      <input type="text" id="ph" required class="input">
+   		          <label for="ph" class="input-label" >PhoneNumber</label>
+   		      </div>
+   	    
+   	<!-- ................................. -->
+     
+              <div class="divBTNsub">
+   		          <button class="btnSub">
+   			          <span class="textSub">Submit</span>
+   			          <i class="ri-check-line icon"></i>
+   		          </button>
+   	          </div>
+  <!-- ............................................. -->
+        </div>
+    </div>
+
+   	  <div class="downUNDER1"></div>
+
+      <div class="downUNDER2"></div>
+
+   	  <div class="downUNDER3"></div>
+
+   	</div>
+
+   	<div class="mostDown">
+   		<div  class="bottomLine"><p>Step up your fitness challange with us<br>Login and start <strong>free trial</strong></p></div>
+   	</div>
+
+   	<div>
+   		<img class="arm" src="arm.jpg">
+   	</div>
+   	<div>
+   		<img class="chest" src="chest.jpg">
+   	</div>
+   	   	<div>
+   		<img class="abs" src="abs.jpg">
+   	</div>
+    
+     <br><br><br><br><br>
+   	
+      <section class="showcase">
+           	<video src="GymVideo.mp4" autoplay loop muted></video>
+           	<h3 class="title1">RAJA</h3>
+           	<h3 class="title2">FITNESS</h3>
+           </section>
+
+</body>
+</html>
